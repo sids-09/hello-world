@@ -1,0 +1,6 @@
+from gtts import gTTS
+import os
+name = " My name is Siddhesh. I love to play football "
+speech = gTTS(text = name, lang = 'en', slow = False)
+speech.save("name.mp3")
+os.system("mpg321 name.mp3")
